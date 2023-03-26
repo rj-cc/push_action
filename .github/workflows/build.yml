@@ -1,0 +1,19 @@
+name: push_action
+on:
+  push:
+    branches:
+      - 'feature/**'
+
+jobs:
+  build:
+    name: build git-commands project
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout project
+        uses: actions/checkout@v2
+      - name: use node.js
+        uses: actions/setup-node@v1
+      - name: install dependencies
+        run: npm install
+      - name: test project
+        run: npm test
