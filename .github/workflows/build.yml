@@ -6,7 +6,7 @@ on:
 
 jobs:
   build:
-    name: build git-commands project
+    name: build git-commands project - testing jenkins
     runs-on: ubuntu-latest
     steps:
       - name: checkout project
