@@ -16,7 +16,7 @@ class GitCommand {
     status(){      
         let num_of_changes = Object.keys(this.working_directory.new_changes).length;
         if(num_of_changes > 0) {
-            return `You have 2 change/s.\n`;
+            return `You have 0 change/s.\n`;
         }  
         else {
             return 'You have 0 change/s.\n';
